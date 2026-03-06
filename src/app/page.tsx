@@ -49,7 +49,7 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroCarouselLogo
           logoText="MECOGROW"
-          description="Transform your business with intelligent AI automation systems engineered for scale"
+          description="Automate 80% of manual work, cut costs by half, and scale operations without hiring"
           buttons={[
             { text: "Explore Solutions", href: "services" },
             { text: "View Our Work", href: "work" },
