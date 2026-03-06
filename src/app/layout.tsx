@@ -1,54 +1,20 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
-import { Raleway } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
-
-const raleway = Raleway({
-  variable: "--font-raleway",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MECOGROW | AI Automation Solutions for Enterprise",  description: "Transform your business with intelligent AI automation systems. From chatbots to workflow optimization, MECOGROW delivers measurable results.",  keywords: "AI automation, workflow automation, AI chatbots, CRM automation, business automation, intelligent systems",  openGraph: {
-    title: "MECOGROW - Premium AI Automation Services",    description: "Intelligent automation solutions engineered for scale and growth",    url: "https://mecogrow.com",    siteName: "MECOGROW",    images: [
-      {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AZPqQCfpmvOc5udQPPnBKo97Uz/abstract-cinematic-background-with-flowi-1772797625218-2418f3e3.png",        alt: "MECOGROW AI Automation Agency"},
-    ],
-    type: "website"},
-  twitter: {
-    card: "summary_large_image",    title: "MECOGROW | AI Automation Solutions",    description: "Transform your business with intelligent automation",    images: ["https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AZPqQCfpmvOc5udQPPnBKo97Uz/abstract-cinematic-background-with-flowi-1772797625218-2418f3e3.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  title: "MECOGROW - AI Automation Solutions",  description: "Transform your business with intelligent AI automation systems"};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} ${raleway.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1416,7 +1382,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
