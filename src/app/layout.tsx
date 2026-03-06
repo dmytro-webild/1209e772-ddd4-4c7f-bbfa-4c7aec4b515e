@@ -5,7 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MECOGROW - AI Automation Solutions",  description: "Transform your business with intelligent AI automation systems"};
+  title: "MECOGROW - AI Automation Solutions",  description: "Transform your business with intelligent AI automation systems"
+};
 
 export default function RootLayout({
   children,
