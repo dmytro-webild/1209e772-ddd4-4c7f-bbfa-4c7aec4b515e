@@ -147,7 +147,7 @@ export default function LandingPage() {
             {
               id: "3",              name: "Customer Success AI System",              price: "89% Time Saved",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AZPqQCfpmvOc5udQPPnBKo97Uz/customer-success-dashboard-showing-autom-1772797626875-b6da3418.png",              imageAlt: "Customer success dashboard"},
           ]}
-          gridVariant="three-columns-all-equal-width"
+          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -167,7 +167,7 @@ export default function LandingPage() {
             {
               id: "3",              value: "Deploy",              description: "Seamless implementation with comprehensive training and support"},
           ]}
-          gridVariant="three-columns-all-equal-width"
+          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={true}
@@ -187,7 +187,7 @@ export default function LandingPage() {
             {
               id: "3",              value: "3.5M+",              description: "Hours Saved Annually"},
           ]}
-          gridVariant="three-columns-all-equal-width"
+          gridVariant="uniform-all-items-equal"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
